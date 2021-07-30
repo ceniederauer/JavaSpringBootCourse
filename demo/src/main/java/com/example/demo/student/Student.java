@@ -35,14 +35,14 @@ public class Student {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.age = age;
         this.dob = dob;
+        this.age = age;
     }
 
     public Student(String name,
                    String email,
-                   Integer age,
-                   LocalDate dob)
+                   LocalDate dob,
+                   Integer age)
     {
         this.name = name;
         this.email = email;
@@ -96,8 +96,8 @@ public class Student {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", age=" + age +
                 ", dob=" + dob +
+                ", age=" + age +
                 '}';
     }
 }
